@@ -10,7 +10,7 @@ import java.util.concurrent.*;
 
 public class StarWarsFetcher {
 
-    private static String starWarsURL = "https://api/SWQuote/RandomStarWarsQuote";
+    private static String starWarsURL = "http://swquotesapi.digitaljedi.dk/api/SWQuote/RandomStarWarsQuote";
 
     public static String fetchData(ExecutorService threadPool, Gson gson) throws InterruptedException, ExecutionException, TimeoutException, IOException {
 
