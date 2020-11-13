@@ -4,23 +4,25 @@ package dto;
 public class StarWarsDTO {
     
         
-    private String value;
+    private String starWarsQuote;
+    private String starWarsRef;
     
     
-    public StarWarsDTO (String value){
-    this.value = getValue();
+    public StarWarsDTO (String starWarsQuote, String starWarsRef){
+    this.starWarsQuote = getStarWarsQuote();
+    this.starWarsRef = "http://swquotesapi.digitaljedi.dk/api/SWQuote/RandomStarWarsQuote";
     
     }
 
     public StarWarsDTO() {
     }
 
-    public String getValue() {
-        return value;
+    public String getStarWarsQuote() {
+        return starWarsQuote;
     }
 
-    public void setValue(String value) {
-        this.value = value;
+    public void setStarWarsQuote(String starWarsQuote) {
+        this.starWarsQuote = starWarsQuote;
     }
     
     }
